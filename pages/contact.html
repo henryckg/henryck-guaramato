@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Oxanium:wght@300;500&display=swap" rel="stylesheet">
+    <title>Contacto - Henryck Guaramato</title>
+</head>
+<body>
+    <header>
+        <div class="cajaTop">
+            <div class="title">
+                <h1>Henryck Guaramato</h1>
+                <p>
+                    <em>Ingeniero en Sonido, Productor Musical</em>
+                </p>
+            </div>
+            <div class="logo">
+                <a href="../index.html"><img src="../img/logo.png" width="80px" alt="imagen de logo" id="top"></a>
+            </div>
+            <div class="socialLogos">
+                <a href="http://www.facebook.com/henryckg" target="_blank"><img src="../img/facebook-logo.png" alt="logo de facebook"></a>
+                <a href="http://www.instagram.com/henryckg" target="_blank"><img src="../img/instragram-logo.png" alt="logo de instagram"></a>
+                <a href="http://www.soundcloud.com/henryck-guaramato" target="_blank"><img src="../img/soundcloud-logo.png" alt="logo de soundcloud"></a>
+            </div>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li> <a href="../index.html">Inicio</a></li>
+                <li> <a href="./services.html">Servicios</a></li>
+                <li> <a href="./advisory.html">Asesorías</a></li>
+                <li> <a href="./portfolio.html">Trabajos</a></li>
+                <li> <a href="./contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contactPage">
+        <h2>Contacto</h2>
+        <section class="contactSection">
+            <form class="contactForm" action="">
+                <div>
+                    <label for="name">Nombre</label><br>
+                    <input type="text" placeholder="Nombre" required class="formField">
+                </div>
+                <div>
+                    <label for="email">E-mail</label><br>
+                    <input type="email" placeholder="Email" required class="formField">
+                </div>
+                <div>
+                    <label for="case">Asunto o Servicio</label><br>
+                    <select name="case" class="formList">
+                        <option value="">Elige una opción...</option>
+                        <option value="prod">Producción Musical</option>
+                        <option value="grab">Grabación</option>
+                        <option value="mix">Mezcla</option>
+                        <option value="mast">Mastering</option>
+                        <option value="adv">Asesorías</option>
+                        <option value="inst">Instalación</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="describe">Describe tu proyecto</label><br>
+                    <textarea class="txtArea" name="describe" id="" cols="50" rows="10"></textarea>
+                </div>
+                <div>
+                    <input class="btnSend" type="submit" value="Enviar">
+                </div>
+            </form>
+            <div class="imgPerfil2">
+                <img src="../img/profile2.jpg" alt="imagen de perfil">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <form class="newsletter" action="">
+            <p>Suscríbete al newsletter</p>
+                <div>
+                    <input type="text" class="nlField" placeholder="Nombre" required>
+                </div>
+                <div>
+                    <input type="text" class="nlField" placeholder="Apellido" required>
+                </div>
+                <div>
+                    <input type="email" class="nlField" placeholder="E-mail" required>
+                </div>
+                <div>
+                    <input class="formButton" type="submit" value="enviar">
+                </div>
+        </form>
+        <div class="cajaSocialLogos">
+            <p>Sígueme en mis redes sociales:</p>
+            <div class="socialLogos">
+                <a href="http://www.facebook.com/henryckg" target="_blank"><img src="../img/facebook-logo.png" alt="logo de facebook"></a>
+                <a href="http://www.instagram.com/henryckg" target="_blank"><img src="../img/instragram-logo.png" alt="logo de instagram"></a>
+                <a href="http://www.soundcloud.com/henryck-guaramato" target="_blank"><img src="../img/soundcloud-logo.png" alt="logo de soundcloud"></a>
+            </div>
+        </div> 
+    </footer>
+</body>
+</html>

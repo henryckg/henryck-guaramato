@@ -1,0 +1,508 @@
+/* RESET CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FONDO DE PÁGINA Y FUENTES */
+
+body{
+    background-image: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.03) 0, rgba(0, 0, 0, 0.03) 1px, transparent 0, transparent 50%);
+    background-size: 11px 11px;
+    background-color: #dfdfdf;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    display: grid;
+}
+
+h1, h2{
+    font-family: 'Oxanium', cursive;
+}
+
+/* HEADER */
+
+.cajaTop{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+}
+
+.cajaTop .title, .socialLogos{
+    width: 25vw;
+}
+
+.cajaTop .logo img{
+    width: 80px;
+}
+
+.socialLogos img{
+    width: 50px;
+    padding: 5px;
+}
+
+.menu{
+    background-color: #2C3333;
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #dfdfdf;
+    margin: 10px;
+    padding: 15px;
+}
+
+.menu li a:hover{
+    color: #2C3333;
+    background-color: #dfdfdf;
+}
+.menu li a:active{
+    color: #2C3333;
+    background-color: #aeacac;
+}
+
+/* MAIN */
+
+.bioSection{
+    background-color: #0E8388;
+    border-top: solid 4px black;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+
+.bioSection img{
+    width: 500px;
+    border-radius: 3px;
+    margin: 0 25px;
+}
+
+.bioSection .bioText{
+    text-align: center;
+    margin: 5px 30px;
+}
+
+.servicesSection{
+    border-top: solid 4px black;
+    background-color: #CBE4DE;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.servicesSection .services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    font-weight: 400;
+}
+
+.servicesSection .services img{
+    width: 240px;
+    height: 170px;
+    border-radius: 5px;
+}
+
+.servicesSection .services img:hover{
+    opacity: 0.8
+}
+
+.portfolioSection{
+    text-align: center;
+    line-height: 1.6;
+    border-top: solid 4px black;
+    border-bottom: solid 4px black;
+    background-color: #0E8388;
+    padding: 20px 0 5px 0;
+    font-size: 1.1rem;
+}
+
+.portfolioSection .carousel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolioSection img{
+    width: 180px;
+    margin: 20px;
+    border-radius: 5px;
+
+}
+
+/* PÁGINA DE SERVICIOS */
+
+.servicesPage{
+    display: grid;
+    margin: 0 50px 15px 50px;
+    gap: 20px;
+    font-size: 1.1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0,4fr 1fr 1fr;
+    grid-template-areas: 
+    "txt txt"
+    "recprod mix"
+    "mast int";
+}
+
+.txt{
+    grid-area: txt;
+    text-align: center;
+    margin: 20px auto 0 auto; 
+
+}
+
+.recprod{
+    grid-area: recprod;
+}
+
+.mix{
+    grid-area: mix;
+}
+
+.mast{
+    grid-area: mast;
+}
+
+.int{
+    grid-area: int;
+}
+
+.serviceLeft, .serviceRight{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 0.2fr 1fr 0.5fr;
+}
+
+.serviceLeft h3{
+    grid-column: 1 / 7;
+    grid-row: 1 / 2;
+    text-align: center;
+    padding: 20px;
+}
+
+.serviceLeft p{
+    grid-column: 1 / 4;
+    grid-row: 2 / 4;
+    align-self: start;
+    padding: 0 15px;
+}
+
+.serviceLeft img{
+    grid-column: 4 / 7;
+    grid-row: 2 / 3;
+    justify-self: center;
+}
+
+.serviceLeft .serviceButton{
+    grid-column: 4 / 7;
+    grid-row: 3 / 4;
+    justify-self: center;
+    align-self: center;
+}
+
+.serviceRight h3{
+    grid-column: 1 / 7;
+    grid-row: 1 / 2;
+    text-align: center;
+    padding: 20px;
+}
+
+.serviceRight p{
+    grid-column: 4 / 7;
+    grid-row: 2 / 4;
+    align-self: start;
+    padding: 0 15px;
+    text-align: end;
+}
+
+.serviceRight img{
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    justify-self: center;
+}
+
+.serviceRight .serviceButton{
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    justify-self: center;
+    align-self: center;
+}
+
+.servicesPage section{
+    border: 2px solid black;
+    background-color: #0E8388;
+}
+
+.servicesPage section img{
+    border-radius: 5px;
+    width: 200px;
+    height: 140px;
+}
+
+.servicesPage .serviceButton{
+    text-decoration: none;
+    text-align: center;
+    background: #CBE4DE;
+    color: #000;
+    border: black 1px solid;
+    width: 160px;
+    height: 30px;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+
+.servicesPage .serviceButton:hover{
+    background: #2E4F4F ;
+}
+
+/* PÁGINA DE ASESORIAS */
+
+.advisoryPage{
+    font-size: 1.1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "asesorias instalaciones"
+    "form form";
+    margin: 20px 50px;
+}
+
+.asesorias{
+    grid-area: asesorias;
+    background-color:#0E8388;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 1px solid black;
+    border-left: 2px solid black;
+    
+}
+    
+.instalaciones{
+    grid-area: instalaciones;
+    background-color:#0E8388;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 1px solid black;
+}
+
+.advisoryPage h3{
+    text-align: center;
+    padding: 10px;
+}
+
+.advisoryPage img{
+    width: 50%;
+    height: 50%;
+    margin-left: 15px;
+}
+
+.advisoryPage section div{
+    display: flex;
+    padding: 10px 20px;
+}
+
+.advisoryForm{
+    background-color: #CBE4DE;
+    grid-area: form;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.2fr 0.5fr 0.5fr 0.2fr;
+    padding: 20px;
+}
+
+.advisoryForm .txtForm{
+    grid-column: 1 / 5;
+    text-align: center;
+    font-weight: 400;
+}
+
+.advisoryForm .nameForm{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.advisoryForm .emailForm{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.advisoryForm .caseForm{
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+.advisoryForm .describeForm{
+    grid-column: 3 / 5;
+    grid-row: 2 / 4;
+}
+
+.formField{
+    outline: none;
+    width: 90%;
+    height: 30px;
+}
+
+.formList{
+    outline: none;
+    width: 95%;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.txtArea{
+    width: 100%;
+    outline: none;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.advisoryForm .btnForm{
+    grid-column: 3 / 5;
+    grid-row: 4 / 5;
+    justify-self: center;
+    width: 50%;
+}
+
+.btnSend{
+    background: #2E4F4F;
+    border: black 1px solid;
+    color: white;
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    text-transform: uppercase;
+}
+
+.btnSend:hover{
+    background: none;
+    color: black;
+    cursor: pointer;
+}
+
+/* PÁGINA DE TRABAJOS */
+
+.portfolioPage{
+    font-size: 1.1rem;
+    background-color:#0E8388;
+    border: 2px solid black;
+    margin: 20px 30px;
+    padding: 10px;
+}
+
+.portfolioPage img{
+    width: 160px;
+    border: 1px black solid;
+}
+
+.portfolioTitle{
+    text-align: center;
+}
+
+.works{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 20px 0px;
+    flex-wrap: wrap;
+}
+
+.works h3{
+    margin: 10px 0;
+}
+
+.works1, .works2{
+    width: 30%;
+}
+
+/* PÁGINA DE CONTACTO */
+
+.contactPage{
+    font-size: 1.1rem;
+    background-color:#0E8388;
+    border: 2px solid black;
+    margin: 20px 30px;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+.contactPage h2{
+    text-align: center;
+}
+
+.contactSection{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactSection .contactForm{
+    width: 50%;
+    margin: 10px;
+}
+
+.imgPerfil2{
+    width: 300px;
+    text-align: center;
+}
+
+.imgPerfil2 img{
+    height: 430px;
+}
+
+.contactForm .formField{
+    width: 100%;
+}
+
+.contactForm .formList{
+    width: 100%;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #2C3333;
+    border-top: solid 2px black;
+    color: #dfdfdf;
+    padding: 20px;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+form .nlField{
+    width: 250px;
+    height: 30px;
+    margin: 5px auto;
+}
+
+form .formButton{
+    background: #CBE4DE;
+    border: black 1px solid;
+    margin-top: 10px;
+    width: 250px;
+    height: 30px;
+    text-transform: uppercase;
+}
+
+form .formButton:hover{
+    background: #2E4F4F;
+    cursor: pointer;
+}
+
