@@ -14,7 +14,7 @@ body{
     background-color: #dfdfdf;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 300;
-    display: grid;
+    color: #000;
 }
 
 h1, h2{
@@ -22,18 +22,6 @@ h1, h2{
 }
 
 /* HEADER */
-
-.cajaTop{
-    display: flex;
-    text-align: center;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 20px;
-}
-
-.cajaTop .title, .socialLogos{
-    width: 25vw;
-}
 
 .cajaTop .logo img{
     width: 80px;
@@ -44,6 +32,18 @@ h1, h2{
     padding: 5px;
 }
 
+.cajaTop{
+    margin: 20px;
+}
+
+.cajaTop h1{
+    margin: 0;
+}
+
+.title{
+    margin-top: 10px
+}
+
 .menu{
     background-color: #2C3333;
     font-weight: bold;
@@ -51,7 +51,7 @@ h1, h2{
     display: flex;
     text-align: center;
     justify-content: center;
-    padding: 15px;
+    padding: 15px
 }
 
 .menu li a{
@@ -59,48 +59,44 @@ h1, h2{
     color: #dfdfdf;
     margin: 10px;
     padding: 15px;
+    transition: 0.5s
 }
 
 .menu li a:hover{
     color: #2C3333;
     background-color: #dfdfdf;
 }
-.menu li a:active{
-    color: #2C3333;
-    background-color: #aeacac;
+
+.navbar{
+    display: none;
 }
+
+.navbar .navbar-brand img{
+    width: 35px;
+    margin-right: 5px;
+}
+
 
 /* MAIN */
 
 .bioSection{
     background-color: #0E8388;
-    border-top: solid 4px black;
-    margin: 0 auto;
-    font-size: 1.1rem;
-    display: flex;  
-    align-items: center;
-    justify-content: center;
+    border-top: solid 4px black;    
 }
 
-.bioSection img{
-    width: 500px;
-    border-radius: 3px;
-    margin: 0 25px;
-}
-
-.bioSection .bioText{
-    text-align: center;
-    margin: 5px 30px;
+.bioSection .bioPic{
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .servicesSection{
     border-top: solid 4px black;
     background-color: #CBE4DE;
-    margin: 0 auto;
-    padding: 20px;
     text-align: center;
-    font-size: 1.1rem;
-    line-height: 1.6;
+}
+
+.servicesSection h2{
+    padding-top: 20px;
 }
 
 .servicesSection .services{
@@ -109,11 +105,12 @@ h1, h2{
     justify-content: space-evenly;
     padding: 20px;
     font-weight: 400;
+    font-size: 1.1rem;
 }
 
 .servicesSection .services img{
     width: 240px;
-    height: 170px;
+    height: 140px;
     border-radius: 5px;
 }
 
@@ -121,27 +118,20 @@ h1, h2{
     opacity: 0.8
 }
 
+.servicesSection .container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.carouselServices{
+    display: none;
+}
+
 .portfolioSection{
     text-align: center;
-    line-height: 1.6;
     border-top: solid 4px black;
     border-bottom: solid 4px black;
     background-color: #0E8388;
-    padding: 20px 0 5px 0;
-    font-size: 1.1rem;
-}
-
-.portfolioSection .carousel{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.portfolioSection img{
-    width: 180px;
-    margin: 20px;
-    border-radius: 5px;
-
 }
 
 /* PÁGINA DE SERVICIOS */
@@ -150,9 +140,8 @@ h1, h2{
     display: grid;
     margin: 0 50px 15px 50px;
     gap: 20px;
-    font-size: 1.1rem;
     grid-template-columns: 1fr 1fr;
-    grid-template-columns: 0,4fr 1fr 1fr;
+    grid-template-rows: 0,4fr 1fr 1fr;
     grid-template-areas: 
     "txt txt"
     "recprod mix"
@@ -163,7 +152,6 @@ h1, h2{
     grid-area: txt;
     text-align: center;
     margin: 20px auto 0 auto; 
-
 }
 
 .recprod{
@@ -249,7 +237,6 @@ h1, h2{
 }
 
 .servicesPage section img{
-    border-radius: 5px;
     width: 200px;
     height: 140px;
 }
@@ -264,6 +251,7 @@ h1, h2{
     height: 30px;
     padding: 0 15px;
     text-transform: uppercase;
+    transition: 0.3s
 }
 
 .servicesPage .serviceButton:hover{
@@ -273,7 +261,6 @@ h1, h2{
 /* PÁGINA DE ASESORIAS */
 
 .advisoryPage{
-    font-size: 1.1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -331,6 +318,7 @@ h1, h2{
     grid-column: 1 / 5;
     text-align: center;
     font-weight: 400;
+    font-size: 1.1rem;
 }
 
 .advisoryForm .nameForm{
@@ -387,6 +375,7 @@ h1, h2{
     width: 100%;
     height: 30px;
     text-transform: uppercase;
+    transition: 0.3s
 }
 
 .btnSend:hover{
@@ -398,7 +387,6 @@ h1, h2{
 /* PÁGINA DE TRABAJOS */
 
 .portfolioPage{
-    font-size: 1.1rem;
     background-color:#0E8388;
     border: 2px solid black;
     margin: 20px 30px;
@@ -408,6 +396,7 @@ h1, h2{
 .portfolioPage img{
     width: 160px;
     border: 1px black solid;
+    margin: 2px;
 }
 
 .portfolioTitle{
@@ -431,15 +420,17 @@ h1, h2{
     width: 30%;
 }
 
+.portfolioCarousel{
+    display: none;
+}
+
 /* PÁGINA DE CONTACTO */
 
 .contactPage{
-    font-size: 1.1rem;
     background-color:#0E8388;
     border: 2px solid black;
     margin: 20px 30px;
     padding: 10px;
-    font-size: 1.1rem;
 }
 
 .contactPage h2{
@@ -448,7 +439,8 @@ h1, h2{
 
 .contactSection{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .contactSection .contactForm{
@@ -462,7 +454,8 @@ h1, h2{
 }
 
 .imgPerfil2 img{
-    height: 430px;
+    height: 450px   ;
+    border: solid 1px black;
 }
 
 .contactForm .formField{
@@ -481,9 +474,6 @@ footer{
     color: #dfdfdf;
     padding: 20px;
     font-size: 1.1rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 form .nlField{
@@ -499,6 +489,7 @@ form .formButton{
     width: 250px;
     height: 30px;
     text-transform: uppercase;
+    transition: 0.3s;
 }
 
 form .formButton:hover{
@@ -506,3 +497,100 @@ form .formButton:hover{
     cursor: pointer;
 }
 
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 764px){
+
+    /* Navbar y Header*/
+
+    .navbar{
+        display: inline;
+    }
+
+    .cajaTop, .menu{
+        display: none;
+    }
+
+    /* Main */
+
+    .servicesSection .services{
+        display: none;
+    }
+    
+    .carouselServices{
+        display: block;
+    }
+
+    .servicesSection h2{
+        display: none;
+    }
+
+    /* Página de Servicios */
+    
+    .servicesPage{
+        display: grid;
+        margin: 0 10px 15px 10px;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0,4fr repeat (4, 1fr);
+        grid-template-areas: 
+        "txt txt"
+        "recprod recprod"
+        "mix mix"
+        "mast mast"
+        "int int";
+    }
+
+    .serviceLeft .serviceButton{
+        align-self: start;    
+    }
+
+    .serviceRight .serviceButton{
+        align-self: start;
+    }
+
+    .servicesPage section img{
+        padding: 10px;
+    }
+
+    /* Página de Trabajos */
+
+    .portfolioPage{
+        margin: 20px 10px;
+    }
+
+    .portfolioPage img{
+        border: none;
+    }
+
+    .portfolioCarousel{
+        display: block;
+    }
+
+    .works1, .works2{
+        display: none;
+    }
+
+    .iframeSect{
+        width: 100%;
+    }
+
+    .iframeSect iframe{
+        width: 100%;
+    }
+
+    /*Página de Contacto */
+
+    .contactPage{
+        margin: 20px 10px;
+    }
+
+    .contactSection{
+        flex-direction: column;
+    }
+
+    .contactSection .contactForm{
+        width: 100%;
+    }
+}
