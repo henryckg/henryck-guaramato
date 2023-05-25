@@ -17,9 +17,7 @@
         <div class="cajaTop row align-items-center">
             <div class="title col-4 text-center">
                 <h1>Henryck Guaramato</h1>
-                <p>
-                    <em>Ingeniero en Sonido, Productor Musical</em>
-                </p>
+                <span>Ingeniero en Sonido, Productor Musical</span>
             </div>
             <div class="logo col-4 text-center">
                 <a href="../index.html"><img src="../img/logo.png" alt="imagen de logo" id="top"></a>
@@ -72,7 +70,7 @@
     </header>
     <main class="advisoryPage">
         <section class="asesorias">
-            <h3>Asesorías</h3>
+            <h2>Asesorías</h2>
             <div>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ad esse sapiente aliquam quia illo vel sunt quo, magnam, facilis saepe perspiciatis quae. Repellat atque animi omnis, reiciendis fuga voluptatem?
@@ -81,7 +79,7 @@
             </div>
         </section>
         <section class="instalaciones">
-            <h3>Instalaciones</h3>
+            <h2>Instalaciones</h2>
             <div>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aliquam qui eius esse ipsa ad, tempore necessitatibus quis harum dolorem cumque tempora rerum recusandae asperiores delectus, doloremque veritatis voluptas vel?
@@ -93,14 +91,14 @@
             <p class="txtForm">Cuéntame qué tienes en mente</p>
             <div class="nameForm">
                 <label for="name">Nombre</label>
-                <input type="text" placeholder="Nombre" class="formField"  required>
+                <input type="text" placeholder="Juan Rodríguez" class="formField"  required>
             </div>
             <div class="emailForm">
                 <label for="email">E-mail</label>
-                <input type="email" placeholder="Email" class="formField" required>
+                <input type="email" placeholder="juan@example.com" class="formField" required>
             </div>
             <div class="caseForm">
-                <label for="case">Asunto</label><br>
+                <label for="case">Asunto</label>
                 <select name="case" class="formList">
                     <option value="">Elige una opción...</option>
                     <option value="adv">Asesorías</option>
@@ -108,7 +106,8 @@
                 </select>
             </div>
             <div class="describeForm">
-                <textarea class="txtArea" name="describe" id="" cols="50" rows="10" placeholder="Describe tu proyecto"></textarea>
+                <label for="describe">Describe tu proyecto</label>
+                <textarea class="txtArea" name="describe" id="" cols="" rows="6"></textarea>
             </div>
             <div class="btnForm">
                 <input class="btnSend" type="submit" value="Enviar">
