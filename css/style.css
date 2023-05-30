@@ -63,7 +63,7 @@ h1, h2{
     color: #dfdfdf;
     margin: 10px;
     padding: 15px;
-    transition: 0.5s
+    transition: 0.3s
 }
 
 .menu li a:hover{
@@ -91,6 +91,18 @@ h1, h2{
 .bioSection .bioPic{
     padding-left: 0;
     padding-right: 0;
+}
+
+.bioText h2{
+    line-height: 1.6;
+}
+
+.bioSection .bioText span{
+    font-weight: 400;
+}
+
+.bioSection .bioText{
+    padding: 0 2rem;
 }
 
 .servicesSection{
@@ -275,6 +287,7 @@ h1, h2{
 
 .advisoryPage{
     display: grid;
+    gap: 10px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
@@ -286,20 +299,13 @@ h1, h2{
 .asesorias{
     grid-area: asesorias;
     background-color:#0E8388;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    border-right: 1px solid black;
-    border-left: 2px solid black;
-    
+    border: 2px solid black;
 }
     
 .instalaciones{
     grid-area: instalaciones;
     background-color:#0E8388;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    border-right: 2px solid black;
-    border-left: 1px solid black;
+    border: 2px solid black;
 }
 
 .advisoryPage h2{
@@ -320,8 +326,13 @@ h1, h2{
     justify-content: space-around;
 }
 
+.advisoryPage section div p{
+    padding: 0 10px;
+}
+
 .advisoryForm{
     background-color: #CBE4DE;
+    border: 2px solid black;
     grid-area: form;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -469,7 +480,7 @@ h1, h2{
 }
 
 .contactForm label{
-    margin-bottom: 3px;
+    margin-bottom: 2px;
 }
 
 .imgPerfil2{
@@ -538,6 +549,10 @@ form .formButton:hover{
 
     /* Main */
 
+    .bioSection .bioText{
+        padding: 0 15px;
+    }
+
     .servicesSection .services{
         display: none;
     }
@@ -578,7 +593,7 @@ form .formButton:hover{
     .servicesPage p{
         margin-bottom: 10px;
         text-align: center;
-        padding-left: 0px;
+        padding: 0 15px;
     }
 
     .servicesPage section img{
@@ -613,12 +628,8 @@ form .formButton:hover{
         text-align: center;
     }
 
-    .asesorias, .instalaciones, .advisoryForm{
-        border: 2px solid black
-    }
-
-    .instalaciones, .advisoryForm{
-        border-top: none;
+    .advisoryPage section div p{
+        padding: 0;
     }
 
     .advisoryForm{

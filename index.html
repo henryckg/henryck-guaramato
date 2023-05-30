@@ -14,6 +14,7 @@
 </head>
 <body>
     <header class="container-fluid">
+    <!-- Caja Top del Header -->
         <div class="cajaTop row align-items-center">
             <div class="title col-4 text-center">
                 <h1>Henryck Guaramato</h1>
@@ -28,6 +29,7 @@
                 <a href="http://www.soundcloud.com/henryck-guaramato" target="_blank"><img src="./img/soundcloud-logo.png" alt="logo de soundcloud"></a>
             </div>
         </div>
+    <!-- Menú solo visible en desktop -->
         <nav class="row">
             <ul class="menu col-12 m-0">
                 <li> <a href="./index.html">Inicio</a></li>
@@ -37,7 +39,7 @@
                 <li> <a href="./pages/contact.html">Contacto</a></li>
             </ul>
         </nav>
-<!--navbar mobile bootstrap max-width: 764px-->
+    <!-- Navbar mobile de bootstrap. Solo visible con max-width: 768px-->
         <div class="row">
             <div class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
                 <div class="container-fluid">
@@ -69,15 +71,23 @@
             </div>
     </header>
     <main class="container-fluid">
+    <!-- Sección de Biografía -->
         <section class="bioSection row align-items-center">
             <img src="./img/profile.jpg" alt="imagen de perfil" class="col-lg-5 col-sm-12 bioPic">
             <div class="bioText col-lg-7 col-sm-12 mt-3 text-center"> 
                 <h2 class="text-center">Biografía</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, dicta unde! Cumque temporibus molestiae error atque qui minima voluptate facere velit quae natus iste modi repellendus impedit libero animi quia ipsa tempore nemo eveniet q uasi veritatis, accusantium rem! Iure quaerat hic dicta fuga modi dolorem tempora off  iciis vel eaque repellat!
+                    Soy <span>Ingeniero en Sonido, Productor Musical, Músico</span> y amante de la tecnología.
+                </p>
+                <p>
+                    Con más de 6 años de experiencia, siempre he estado enfocado en alcanzar la excelencia en cualquier proyecto musical del que formo parte, incluso en sonido en vivo y en producciones audiovisuales. Además, me encargo de asesorar a aquellos que no saben por donde empezar y quieran lograr un resultado adaptado a los estándares actuales.
+                </p>
+                <p>
+                    Espero trabajar junto a ti para alcanzar el objetivo que desees.
                 </p>
             </div>  
         </section>
+    <!-- Sección de Servicios. Solo visible para desktop -->
         <section class="servicesSection row">
             <h2>
                 Servicios
@@ -104,7 +114,7 @@
                     <p>Instalaciones</p>
                 </div>
             </div>
-<!--carrusel mobile bootstrap max-width: 764px-->
+        <!-- Carrusel mobile de bootstrap. Solo visible con max-width: 768px-->
             <div class="container-fluid carouselServices">
                 <div class="row">
                     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -169,9 +179,10 @@
                 </div>
             </div>
         </section>
+    <!-- Sección de Trabajos -->
         <section class="portfolioSection row">
             <h2 class="mt-4 mb-4">Algunos Trabajos</h2> 
-<!--carrusel bootstrap-->
+            <!--Carrusel bootstrap-->
             <div id="carouselExampleIndicators" class="carousel slide col-12 m-auto w-50 mb-4" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -222,7 +233,7 @@
     </main>
     <footer class="container-fluid">
         <div class="row">
-            <form class="newsletter col-lg-6 text-center mt-3" action="">
+            <form class="newsletter col-lg-6 text-center mt-2" action="">
                 <p>Suscríbete al newsletter</p>
                     <div>
                         <input type="text" class="nlField" placeholder="Nombre" required>
@@ -237,7 +248,7 @@
                         <input class="formButton" type="submit" value="enviar">
                     </div>
             </form>
-            <div class="cajaSocialLogos col-lg-6 text-center mt-3">
+            <div class="cajaSocialLogos col-lg-6 text-center mt-2">
                 <p>Sígueme en mis redes sociales:</p>
                 <div class="socialLogos">
                     <a href="http://www.facebook.com/henryckg" target="_blank"><img src="./img/facebook-logo.png" alt="logo de facebook"></a>
