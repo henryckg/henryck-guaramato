@@ -21,43 +21,43 @@ body {
   body h2 {
     font-family: 'Oxanium', cursive; }
 
-header .cajaTop {
-  margin: 20px; }
-  header .cajaTop .title {
-    margin-top: 10px; }
-    header .cajaTop .title h1 {
-      margin: 0; }
-    header .cajaTop .title span {
-      font-style: italic; }
-  header .cajaTop .logo img {
-    width: 80px; }
-  header .cajaTop .socialLogos img {
-    width: 50px;
-    padding: 5px; }
-
-header nav .menu {
-  background-color: #2C3333;
-  font-weight: bold;
-  list-style: none;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  padding: 15px; }
-  header nav .menu li a {
-    text-decoration: none;
-    color: #dfdfdf;
-    margin: 10px;
-    padding: 15px;
-    transition: 0.3s; }
-    header nav .menu li a:hover {
-      color: #2C3333;
-      background-color: #dfdfdf; }
-
-header div .navbar {
-  display: none; }
-  header div .navbar div .navbar-brand img {
-    width: 35px;
-    margin-right: 5px; }
+header {
+  /* Menú Bootstrap escondido. Solo visible en mobile */ }
+  header .cajaTop {
+    margin: 20px; }
+    header .cajaTop .title {
+      margin-top: 10px; }
+      header .cajaTop .title h1 {
+        margin: 0; }
+      header .cajaTop .title span {
+        font-style: italic; }
+    header .cajaTop .logo img {
+      width: 80px; }
+    header .cajaTop .socialLogos img {
+      width: 50px;
+      padding: 5px; }
+  header nav .menu {
+    background-color: #2C3333;
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 15px; }
+    header nav .menu li a {
+      text-decoration: none;
+      color: #dfdfdf;
+      margin: 10px;
+      padding: 15px;
+      transition: 0.3s; }
+      header nav .menu li a:hover {
+        color: #2C3333;
+        background-color: #dfdfdf; }
+  header div .navbar {
+    display: none; }
+    header div .navbar div .navbar-brand img {
+      width: 35px;
+      margin-right: 5px; }
 
 main .bioSection {
   background-color: #0E8388;
@@ -75,7 +75,8 @@ main .bioSection {
 main .servicesSection {
   border-top: solid 4px black;
   background-color: #CBE4DE;
-  text-align: center; }
+  text-align: center;
+  /* Carrusel de Servicios escondido. Solo visible en mobile */ }
   main .servicesSection h2 {
     padding-top: 20px; }
   main .servicesSection .services {
@@ -413,7 +414,8 @@ main .portfolioSection {
     justify-content: space-evenly;
     text-align: center;
     padding: 20px 0px;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    /* Carrusel de Bootstrap escondido. Solo visible en mobile */ }
     .portfolioPage .works .works1, .portfolioPage .works .works2 {
       width: 30%; }
       .portfolioPage .works .works1 h3, .portfolioPage .works .works2 h3 {
@@ -509,7 +511,7 @@ footer {
     display: inline; }
   header nav .menu {
     display: none; }
-  /* Main */
+  /* Inicio */
   main .bioSection .bioText {
     padding: 0 15px; }
   main .servicesSection h2 {

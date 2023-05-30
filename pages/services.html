@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contrata la etapa que te interese de tu proyecto musical. Y si no sabes como iniciarlo, te puedo ayudar.">
     <meta name="keywords" content="servicios musicales, producción musical, grabación, mezcla de sonido, mixing, mastering, instalaciones de sonido, asesorías">
+<!-- Favicon -->
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+<!-- Link a Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<!-- Link a AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- Links a fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Oxanium:wght@300;500&display=swap" rel="stylesheet">
+<!-- Link a estilo propio -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Henryck Guaramato - Ing. Sonido | Servicios</title>
 </head>
@@ -75,8 +81,8 @@
     </header>
     <main class="servicesPage">
         <h2 class="txt">Servicios</h2>
-    <!-- Sección 1 -->
-        <section class="recprod">
+    <!-- Sección Grabación y Prod. Musical -->
+        <section class="recprod" data-aos="fade-right">
             <h3>Grabación / Prod. Musical</h3>
             <img src="../img/recording.jpeg" alt="sesión de grabación">
             <p>
@@ -84,8 +90,8 @@
             </p>
             <a class="serviceButton" href="contact.html">Cotizar</a>
         </section>
-        <!-- Sección 2 -->
-        <section class="mix">
+        <!-- Sección Mezcla -->
+        <section class="mix" data-aos="fade-left">
             <h3>Mezcla</h3>
             <img src="../img/mixing.jpeg" alt="mezcla de sonido">
             <p>
@@ -93,8 +99,8 @@
             </p>
             <a class="serviceButton" href="contact.html">Cotizar</a>
         </section>
-        <!-- Sección 3 -->
-        <section class="mast">
+        <!-- Sección Mastering -->
+        <section class="mast" data-aos="fade-right">
             <h3>Mastering</h3>
             <img src="../img/mastering.jpeg" alt="sesión de mastering">
             <p>
@@ -102,8 +108,8 @@
             </p>
             <a class="serviceButton" href="contact.html">Cotizar</a>
         </section>
-    <!-- Sección 4 -->
-        <section class="inst">
+    <!-- Sección Asesorías e Instalaciones -->
+        <section class="inst" data-aos="fade-left">
             <h3>Asesorías e Instalaciones</h3>
             <img src="../img/construction.jpeg" alt="construcción de estudio">
             <p>
@@ -139,6 +145,16 @@
             </div>
         </div> 
     </footer>
+
+<!-- Script de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<!-- Scripts AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+				easing: 'ease-out-back',
+				duration: 1200
+			});
+    </script>
 </body>
 </html>

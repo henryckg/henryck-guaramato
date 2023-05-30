@@ -1,4 +1,4 @@
-header{
+header{   
     .cajaTop{
         margin: 20px;
         .title{
@@ -21,7 +21,7 @@ header{
                 padding: 5px;
             }
         }
-    }
+    }   
     nav{
         .menu{
             background-color: $darkBg;
@@ -46,6 +46,8 @@ header{
             }
         }
     }
+
+    /* Menú Bootstrap escondido. Solo visible en mobile */    
     div{
         .navbar{
             display: none;

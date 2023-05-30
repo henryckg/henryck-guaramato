@@ -25,8 +25,10 @@
             }
         }
         .works2{
-            @extend .works1
+            @extend .works1;
         }
+        
+        /* Carrusel de Bootstrap escondido. Solo visible en mobile */
         .portfolioCarousel{
             display: none;
         }
