@@ -1,716 +1,655 @@
-/* RESET CSS */
+@charset "UTF-8";
+/* Mixin para página de servicios */
+/* Mixin para página de asesorías */
+/* Mixin para página de servicios en mobile */
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Fondo de página y fuentes */
+body {
+  background-image: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.03) 0, rgba(0, 0, 0, 0.03) 1px, transparent 0, transparent 50%);
+  background-size: 11px 11px;
+  background-color: #dfdfdf;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 300;
+  color: #000; }
+  body h1 {
+    font-family: 'Oxanium', cursive; }
+  body h2 {
+    font-family: 'Oxanium', cursive; }
 
-/* FONDO DE PÁGINA Y FUENTES */
-
-body{
-    background-image: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.03) 0, rgba(0, 0, 0, 0.03) 1px, transparent 0, transparent 50%);
-    background-size: 11px 11px;
-    background-color: #dfdfdf;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 300;
-    color: #000;
-}
-
-h1, h2{
-    font-family: 'Oxanium', cursive;
-}
-
-/* HEADER */
-
-.cajaTop .logo img{
-    width: 80px;
-}
-
-.socialLogos img{
+header .cajaTop {
+  margin: 20px; }
+  header .cajaTop .title {
+    margin-top: 10px; }
+    header .cajaTop .title h1 {
+      margin: 0; }
+    header .cajaTop .title span {
+      font-style: italic; }
+  header .cajaTop .logo img {
+    width: 80px; }
+  header .cajaTop .socialLogos img {
     width: 50px;
-    padding: 5px;
-}
+    padding: 5px; }
 
-.cajaTop{
-    margin: 20px;
-}
-
-.cajaTop h1{
-    margin: 0;
-}
-
-.title{
-    margin-top: 10px
-}
-
-.title span{
-    font-style: italic;
-}
-
-.menu{
-    background-color: #2C3333;
-    font-weight: bold;
-    list-style: none;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    padding: 15px
-}
-
-.menu li a{
+header nav .menu {
+  background-color: #2C3333;
+  font-weight: bold;
+  list-style: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 15px; }
+  header nav .menu li a {
     text-decoration: none;
     color: #dfdfdf;
     margin: 10px;
     padding: 15px;
-    transition: 0.3s
-}
+    transition: 0.3s; }
+    header nav .menu li a:hover {
+      color: #2C3333;
+      background-color: #dfdfdf; }
 
-.menu li a:hover{
-    color: #2C3333;
-    background-color: #dfdfdf;
-}
-
-.navbar{
-    display: none;
-}
-
-.navbar .navbar-brand img{
+header div .navbar {
+  display: none; }
+  header div .navbar div .navbar-brand img {
     width: 35px;
-    margin-right: 5px;
-}
+    margin-right: 5px; }
 
-
-/* MAIN */
-
-.bioSection{
-    background-color: #0E8388;
-    border-top: solid 4px black;    
-}
-
-.bioSection .bioPic{
+main .bioSection {
+  background-color: #0E8388;
+  border-top: solid 4px black; }
+  main .bioSection .bioPic {
     padding-left: 0;
-    padding-right: 0;
-}
+    padding-right: 0; }
+  main .bioSection .bioText {
+    padding: 0 2rem; }
+    main .bioSection .bioText h2 {
+      line-height: 1.6; }
+    main .bioSection .bioText p span {
+      font-weight: 400; }
 
-.bioText h2{
-    line-height: 1.6;
-}
-
-.bioSection .bioText span{
-    font-weight: 400;
-}
-
-.bioSection .bioText{
-    padding: 0 2rem;
-}
-
-.servicesSection{
-    border-top: solid 4px black;
-    background-color: #CBE4DE;
-    text-align: center;
-}
-
-.servicesSection h2{
-    padding-top: 20px;
-}
-
-.servicesSection .services{
+main .servicesSection {
+  border-top: solid 4px black;
+  background-color: #CBE4DE;
+  text-align: center; }
+  main .servicesSection h2 {
+    padding-top: 20px; }
+  main .servicesSection .services {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 20px;
     font-weight: 400;
-    font-size: 1.1rem;
-}
-
-.servicesSection .services img{
-    width: 240px;
-    height: 140px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.servicesSection .services img:hover{
-    opacity: 0.8
-}
-
-.servicesSection .container-fluid{
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.carouselServices{
+    font-size: 1.1rem; }
+    main .servicesSection .services div a img {
+      width: 240px;
+      height: 140px;
+      border-radius: 5px;
+      margin-bottom: 10px; }
+      main .servicesSection .services div a img:hover {
+        opacity: 0.8; }
+  main .servicesSection .carouselServices {
     display: none;
-}
+    padding-left: 0;
+    padding-right: 0; }
+    main .servicesSection .carouselServices span {
+      font-size: 1.8rem;
+      font-weight: 400; }
 
-.carouselServices .carousel-item span{
-    font-size: 1.8rem;
-    font-weight: 400;
-}
+main .portfolioSection {
+  text-align: center;
+  border-top: solid 4px black;
+  border-bottom: solid 4px black;
+  background-color: #0E8388; }
 
-.portfolioSection{
-    text-align: center;
-    border-top: solid 4px black;
-    border-bottom: solid 4px black;
-    background-color: #0E8388;
-}
-
-/* PÁGINA DE SERVICIOS */
-
-.servicesPage{
-    display: grid;
-    margin: 0 30px 15px 30px;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0,4fr 1fr 1fr;
-    grid-template-areas: 
-    "txt txt"
-    "recprod mix"
-    "mast int";
-}
-
-.txt{
+.servicesPage {
+  display: grid;
+  margin: 0 30px 15px 30px;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0,4fr 1fr 1fr;
+  grid-template-areas: "txt txt" "recprod mix" "mast inst"; }
+  .servicesPage .txt {
     grid-area: txt;
     text-align: center;
-    margin: 20px auto 0 auto; 
-}
-
-.recprod{
+    margin: 20px auto 0 auto; }
+  .servicesPage .recprod {
     grid-area: recprod;
-}
-
-.mix{
-    grid-area: mix;
-}
-
-.mast{
-    grid-area: mast;
-}
-
-.int{
-    grid-area: int;
-}
-
-.serviceLeft, .serviceRight{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 60px auto 60px;
-}
-
-.serviceLeft h3{
-    grid-column: 1 / 8;
-    grid-row: 1 / 2;
-    text-align: center;
-    padding: 15px;
-}
-
-.serviceLeft p{
-    grid-column: 1 / 5;
-    grid-row: 2 / 4;
-    align-self: start;
-    padding-left: 15px;
-}
-
-.serviceLeft img{
-    grid-column: 5 / 8;
-    grid-row: 2 / 3;
-    justify-self: center;
-}
-
-.serviceLeft .serviceButton{
-    grid-column: 1 / 5;
-    grid-row: 3 / 4;
-    justify-self: center;
-    align-self: center;
-}
-
-.serviceRight h3{
-    grid-column: 1 / 8;
-    grid-row: 1 / 2;
-    text-align: center;
-    padding: 15px;
-}
-
-.serviceRight p{
-    grid-column: 4 / 8;
-    grid-row: 2 / 4;
-    align-self: start;
-    padding-right: 15px;
-    text-align: end;
-}
-
-.serviceRight img{
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
-    justify-self: center;
-}
-
-.serviceRight .serviceButton{
-    grid-column: 4 / 8;
-    grid-row: 3 / 4;
-    justify-self: center;
-    align-self: center;
-}
-
-.servicesPage section{
     border: 2px solid black;
-    background-color: #0E8388;
-}
-
-.servicesPage section img{
-    width: 220px;
-    height: 140px;
-    margin: 0 10px;
-}
-
-.servicesPage .serviceButton{
-    text-decoration: none;
-    text-align: center;
-    background-color: #CBE4DE;
-    color: #000;
-    border: black 1px solid;
-    width: 160px;
-    padding: 3px 0;
-    text-transform: uppercase;
-    font-weight: 400;
-    transition: 0.3s;
-}
-
-.servicesPage .serviceButton:hover{
-    background: #2E4F4F ;
-    color: #fff;
-    cursor: pointer;
-}
-
-/* PÁGINA DE ASESORIAS */
-
-.advisoryPage{
+    background-color: #0E8388; }
+    .servicesPage .recprod h3 {
+      grid-column: 1 / 8;
+      grid-row: 1 / 2;
+      text-align: center;
+      padding: 15px; }
+    .servicesPage .recprod img {
+      grid-column: 5/span 3;
+      grid-row: 2 / 3;
+      justify-self: center;
+      width: 220px;
+      height: 140px;
+      margin: 0 10px; }
+    .servicesPage .recprod p {
+      grid-column: 1/span 4;
+      grid-row: 2 / 4;
+      align-self: start;
+      padding: 0 0 0 15px;
+      text-align: start; }
+    .servicesPage .recprod .serviceButton {
+      grid-column: 1/span 4;
+      grid-row: 3 / 4;
+      justify-self: center;
+      align-self: center;
+      text-decoration: none;
+      text-align: center;
+      background-color: #CBE4DE;
+      color: #000;
+      border: black 1px solid;
+      width: 160px;
+      padding: 3px 0;
+      text-transform: uppercase;
+      font-weight: 400;
+      transition: 0.3s; }
+      .servicesPage .recprod .serviceButton:hover {
+        background: #2C3333;
+        color: #fff;
+        cursor: pointer; }
+  .servicesPage .mix {
+    grid-area: mix;
     display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "asesorias instalaciones"
-    "form form";
-    margin: 20px 30px;
-}
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 60px auto 60px;
+    border: 2px solid black;
+    background-color: #0E8388; }
+    .servicesPage .mix h3 {
+      grid-column: 1 / 8;
+      grid-row: 1 / 2;
+      text-align: center;
+      padding: 15px; }
+    .servicesPage .mix img {
+      grid-column: 1/span 3;
+      grid-row: 2 / 3;
+      justify-self: center;
+      width: 220px;
+      height: 140px;
+      margin: 0 10px; }
+    .servicesPage .mix p {
+      grid-column: 4/span 4;
+      grid-row: 2 / 4;
+      align-self: start;
+      padding: 0 15px 0 0;
+      text-align: end; }
+    .servicesPage .mix .serviceButton {
+      grid-column: 4/span 4;
+      grid-row: 3 / 4;
+      justify-self: center;
+      align-self: center;
+      text-decoration: none;
+      text-align: center;
+      background-color: #CBE4DE;
+      color: #000;
+      border: black 1px solid;
+      width: 160px;
+      padding: 3px 0;
+      text-transform: uppercase;
+      font-weight: 400;
+      transition: 0.3s; }
+      .servicesPage .mix .serviceButton:hover {
+        background: #2C3333;
+        color: #fff;
+        cursor: pointer; }
+  .servicesPage .mast {
+    grid-area: mast;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 60px auto 60px;
+    border: 2px solid black;
+    background-color: #0E8388; }
+    .servicesPage .mast h3 {
+      grid-column: 1 / 8;
+      grid-row: 1 / 2;
+      text-align: center;
+      padding: 15px; }
+    .servicesPage .mast img {
+      grid-column: 5/span 3;
+      grid-row: 2 / 3;
+      justify-self: center;
+      width: 220px;
+      height: 140px;
+      margin: 0 10px; }
+    .servicesPage .mast p {
+      grid-column: 1/span 4;
+      grid-row: 2 / 4;
+      align-self: start;
+      padding: 0 0 0 15px;
+      text-align: start; }
+    .servicesPage .mast .serviceButton {
+      grid-column: 1/span 4;
+      grid-row: 3 / 4;
+      justify-self: center;
+      align-self: center;
+      text-decoration: none;
+      text-align: center;
+      background-color: #CBE4DE;
+      color: #000;
+      border: black 1px solid;
+      width: 160px;
+      padding: 3px 0;
+      text-transform: uppercase;
+      font-weight: 400;
+      transition: 0.3s; }
+      .servicesPage .mast .serviceButton:hover {
+        background: #2C3333;
+        color: #fff;
+        cursor: pointer; }
+  .servicesPage .inst {
+    grid-area: inst;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 60px auto 60px;
+    border: 2px solid black;
+    background-color: #0E8388; }
+    .servicesPage .inst h3 {
+      grid-column: 1 / 8;
+      grid-row: 1 / 2;
+      text-align: center;
+      padding: 15px; }
+    .servicesPage .inst img {
+      grid-column: 1/span 3;
+      grid-row: 2 / 3;
+      justify-self: center;
+      width: 220px;
+      height: 140px;
+      margin: 0 10px; }
+    .servicesPage .inst p {
+      grid-column: 4/span 4;
+      grid-row: 2 / 4;
+      align-self: start;
+      padding: 0 15px 0 0;
+      text-align: end; }
+    .servicesPage .inst .serviceButton {
+      grid-column: 4/span 4;
+      grid-row: 3 / 4;
+      justify-self: center;
+      align-self: center;
+      text-decoration: none;
+      text-align: center;
+      background-color: #CBE4DE;
+      color: #000;
+      border: black 1px solid;
+      width: 160px;
+      padding: 3px 0;
+      text-transform: uppercase;
+      font-weight: 400;
+      transition: 0.3s; }
+      .servicesPage .inst .serviceButton:hover {
+        background: #2C3333;
+        color: #fff;
+        cursor: pointer; }
 
-.asesorias{
+.advisoryPage {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "asesorias instalaciones" "form form";
+  margin: 20px 30px; }
+  .advisoryPage .asesorias {
     grid-area: asesorias;
-    background-color:#0E8388;
-    border: 2px solid black;
-}
-    
-.instalaciones{
+    background-color: #0E8388;
+    border: 2px solid black; }
+    .advisoryPage .asesorias h2 {
+      text-align: center;
+      padding: 10px; }
+    .advisoryPage .asesorias div {
+      display: flex;
+      padding: 0 20px 10px;
+      align-content: center;
+      justify-content: space-around; }
+      .advisoryPage .asesorias div p {
+        padding: 0 10px; }
+      .advisoryPage .asesorias div img {
+        width: 300px;
+        height: 160px;
+        margin-left: 15px; }
+  .advisoryPage .instalaciones {
     grid-area: instalaciones;
-    background-color:#0E8388;
-    border: 2px solid black;
-}
-
-.advisoryPage h2{
-    text-align: center;
-    padding: 10px;
-}
-
-.advisoryPage img{
-    width: 300px;
-    height: 160px;
-    margin-left: 15px;
-}
-
-.advisoryPage section div{
-    display: flex;
-    padding: 0 20px 10px;
-    align-content: center;
-    justify-content: space-around;
-}
-
-.advisoryPage section div p{
-    padding: 0 10px;
-}
-
-.advisoryForm{
+    background-color: #0E8388;
+    border: 2px solid black; }
+    .advisoryPage .instalaciones h2 {
+      text-align: center;
+      padding: 10px; }
+    .advisoryPage .instalaciones div {
+      display: flex;
+      padding: 0 20px 10px;
+      align-content: center;
+      justify-content: space-around; }
+      .advisoryPage .instalaciones div p {
+        padding: 0 10px; }
+      .advisoryPage .instalaciones div img {
+        width: 300px;
+        height: 160px;
+        margin-left: 15px; }
+  .advisoryPage .advisoryForm {
     background-color: #CBE4DE;
     border: 2px solid black;
     grid-area: form;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 0.2fr 0.5fr 0.5fr 0.2fr;
-    padding: 20px;
-}
+    padding: 20px; }
+    .advisoryPage .advisoryForm .txtForm {
+      grid-column: 3 / 5;
+      text-align: center;
+      font-weight: 400;
+      font-size: 1.1rem; }
+    .advisoryPage .advisoryForm .nameForm {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3; }
+      .advisoryPage .advisoryForm .nameForm .formField {
+        outline: none;
+        width: 95%;
+        height: 30px; }
+    .advisoryPage .advisoryForm .emailForm {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3; }
+      .advisoryPage .advisoryForm .emailForm .formField {
+        outline: none;
+        width: 95%;
+        height: 30px; }
+    .advisoryPage .advisoryForm .caseForm {
+      grid-column: 2 / 4;
+      grid-row: 3 / 4; }
+      .advisoryPage .advisoryForm .caseForm .formList {
+        outline: none;
+        width: 98%;
+        height: 30px;
+        border-radius: 10px; }
+    .advisoryPage .advisoryForm .describeForm {
+      grid-column: 4 / 6;
+      grid-row: 2 / 4;
+      justify-self: center; }
+      .advisoryPage .advisoryForm .describeForm .txtArea {
+        width: 100%;
+        outline: none;
+        font-family: 'Noto Sans', sans-serif; }
+    .advisoryPage .advisoryForm .btnForm {
+      grid-column: 3 / 5;
+      grid-row: 4 / 5;
+      justify-self: center;
+      width: 50%; }
+      .advisoryPage .advisoryForm .btnForm .btnSend {
+        background: #2E4F4F;
+        border: black 1px solid;
+        color: white;
+        margin-top: 10px;
+        width: 100%;
+        height: 30px;
+        text-transform: uppercase;
+        transition: 0.3s; }
+        .advisoryPage .advisoryForm .btnForm .btnSend:hover {
+          background: transparent;
+          color: black;
+          cursor: pointer; }
 
-.advisoryForm .txtForm{
-    grid-column: 3 / 5;
-    text-align: center;
-    font-weight: 400;   
-    font-size: 1.1rem;
-}
-
-.advisoryForm .nameForm{
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-
-.advisoryForm .emailForm{
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-}
-
-.advisoryForm .caseForm{
-    grid-column: 2 / 4;
-    grid-row: 3 / 4;
-}
-
-.advisoryForm .describeForm{
-    grid-column: 4 / 6;
-    grid-row: 2 / 4;
-    justify-self: center;
-}
-
-.formField{
-    outline: none;
-    width: 95%;
-    height: 30px;
-}
-
-.formList{
-    outline: none;
-    width: 98%;
-    height: 30px;
-    border-radius: 10px;
-}
-
-.txtArea{
-    width: 100%;
-    outline: none;
-    font-family: 'Noto Sans', sans-serif;
-}
-
-.advisoryForm .btnForm{
-    grid-column: 3 / 5;
-    grid-row: 4 / 5;
-    justify-self: center;
-    width: 50%;
-}
-
-.btnSend{
-    background: #2E4F4F;
-    border: black 1px solid;
-    color: white;
-    margin-top: 10px;
-    width: 100%;
-    height: 30px;
-    text-transform: uppercase;
-    transition: 0.3s
-}
-
-.btnSend:hover{
-    background: none;
-    color: black;
-    cursor: pointer;
-}
-
-/* PÁGINA DE TRABAJOS */
-
-.portfolioPage{
-    background-color:#0E8388;
-    border: 2px solid black;
-    margin: 20px 30px;
-    padding: 10px;
-}
-
-.portfolioPage img{
-    width: 160px;
-    border: 1px black solid;
-    margin: 2px;
-}
-
-.portfolioTitle{
-    text-align: center;
-}
-
-.works{
+.portfolioPage {
+  background-color: #0E8388;
+  border: 2px solid black;
+  margin: 20px 30px;
+  padding: 10px; }
+  .portfolioPage .portfolioTitle {
+    text-align: center; }
+  .portfolioPage .works {
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
     text-align: center;
     padding: 20px 0px;
-    flex-wrap: wrap;
-}
+    flex-wrap: wrap; }
+    .portfolioPage .works .works1, .portfolioPage .works .works2 {
+      width: 30%; }
+      .portfolioPage .works .works1 h3, .portfolioPage .works .works2 h3 {
+        margin: 10px 0; }
+      .portfolioPage .works .works1 img, .portfolioPage .works .works2 img {
+        width: 160px;
+        border: 1px black solid;
+        margin: 2px; }
+    .portfolioPage .works .portfolioCarousel {
+      display: none; }
 
-.works h3{
-    margin: 10px 0;
-}
-
-.works1, .works2{
-    width: 30%;
-}
-
-.portfolioCarousel{
-    display: none;
-}
-
-/* PÁGINA DE CONTACTO */
-
-.contactPage{
-    background-color:#0E8388;
-    border: 2px solid black;
-    margin: 20px 30px;
-    padding: 10px;
-}
-
-.contactPage h2{
-    text-align: center;
-}
-
-.contactSection{
+.contactPage {
+  background-color: #0E8388;
+  border: 2px solid black;
+  margin: 20px 30px;
+  padding: 10px; }
+  .contactPage h2 {
+    text-align: center; }
+  .contactPage .contactSection {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-}
+    align-items: center; }
+    .contactPage .contactSection .contactForm {
+      width: 50%;
+      margin: 10px; }
+      .contactPage .contactSection .contactForm div {
+        margin: 10px; }
+        .contactPage .contactSection .contactForm div label {
+          margin-bottom: 2px; }
+        .contactPage .contactSection .contactForm div .formField {
+          width: 100%;
+          outline: none;
+          height: 30px; }
+        .contactPage .contactSection .contactForm div .formList {
+          width: 100%;
+          outline: none;
+          height: 30px;
+          border-radius: 10px; }
+        .contactPage .contactSection .contactForm div .txtArea {
+          width: 100%;
+          outline: none;
+          font-family: 'Noto Sans', sans-serif; }
+        .contactPage .contactSection .contactForm div .btnSend {
+          background: #2E4F4F;
+          border: black 1px solid;
+          color: white;
+          margin-top: 10px;
+          width: 100%;
+          height: 30px;
+          text-transform: uppercase;
+          transition: 0.3s; }
+          .contactPage .contactSection .contactForm div .btnSend:hover {
+            background: transparent;
+            color: black;
+            cursor: pointer; }
+    .contactPage .contactSection .imgPerfil2 {
+      width: 300px;
+      text-align: center; }
+      .contactPage .contactSection .imgPerfil2 img {
+        height: 450px;
+        border: solid 1px black; }
 
-.contactSection .contactForm{
-    width: 50%;
-    margin: 10px;
-}
-
-.contactForm div{
-    margin: 10px;
-}
-
-.contactForm label{
-    margin-bottom: 2px;
-}
-
-.imgPerfil2{
-    width: 300px;
-    text-align: center;
-}
-
-.imgPerfil2 img{
-    height: 450px   ;
-    border: solid 1px black;
-}
-
-.contactForm .formField{
-    width: 100%;
-}
-
-.contactForm .formList{
-    width: 100%;
-}
-
-/* FOOTER */
-
-footer{
-    background-color: #2C3333;
-    border-top: solid 2px black;
-    color: #dfdfdf;
-    padding: 20px;
-    font-size: 1.1rem;
-}
-
-form .nlField{
+footer {
+  background-color: #2C3333;
+  border-top: solid 2px black;
+  color: #dfdfdf;
+  padding: 20px;
+  font-size: 1.1rem; }
+  footer .newsletter div .nlField {
     width: 250px;
     height: 30px;
-    margin: 5px auto;
-}
-
-form .formButton{
+    margin: 5px auto; }
+  footer .newsletter div .formButton {
     background: #CBE4DE;
     border: black 1px solid;
     margin-top: 10px;
     width: 250px;
     height: 30px;
     text-transform: uppercase;
-    transition: 0.3s;
-}
+    transition: 0.3s; }
+    footer .newsletter div .formButton:hover {
+      background: #2E4F4F;
+      cursor: pointer; }
+  footer .cajaSocialLogos .socialLogos a img {
+    width: 50px;
+    padding: 5px; }
 
-form .formButton:hover{
-    background: #2E4F4F;
-    cursor: pointer;
-}
-
-
-/* MEDIA QUERIES */
-
-@media screen and (max-width: 768px){
-
-    /* Navbar y Header*/
-
-    .navbar{
-        display: inline;
-    }
-
-    .cajaTop, .menu{
-        display: none;
-    }
-
-    /* Main */
-
-    .bioSection .bioText{
-        padding: 0 15px;
-    }
-
-    .servicesSection .services{
-        display: none;
-    }
-    
-    .carouselServices{
-        display: block;
-    }
-
-    .servicesSection h2{
-        display: none;
-    }
-
-    /* Página de Servicios */
-    
-    .servicesPage{
-        margin: 0 10px 15px 10px;
-        gap: 10px;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "txt"
-        "recprod"
-        "mix"
-        "mast"
-        "int";
-    }
-
-    .serviceLeft, .serviceRight{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .servicesPage h3{
-        padding: 8px 0 0 0 ;
-    }
-
-    .servicesPage p{
+@media screen and (max-width: 768px) {
+  /* Navbar y Header*/
+  header .cajaTop {
+    display: none; }
+  header div .navbar {
+    display: inline; }
+  header nav .menu {
+    display: none; }
+  /* Main */
+  main .bioSection .bioText {
+    padding: 0 15px; }
+  main .servicesSection h2 {
+    display: none; }
+  main .servicesSection .services {
+    display: none; }
+  main .servicesSection .carouselServices {
+    display: block; }
+  /* Página de Servicios */
+  .servicesPage {
+    margin: 0 10px 15px 10px;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "txt" "recprod" "mix" "mast" "inst"; }
+    .servicesPage .recprod {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .servicesPage .recprod h3 {
+        padding: 8px 0 0 0; }
+      .servicesPage .recprod img {
+        padding: 10px 0; }
+      .servicesPage .recprod p {
         margin-bottom: 10px;
         text-align: center;
-        padding: 0 15px;
-    }
-
-    .servicesPage section img{
-        padding: 10px 0;
-    }
-
-    .servicesPage a{
+        padding: 0 15px; }
+      .servicesPage .recprod a {
+        margin-bottom: 10px; }
+    .servicesPage .mix {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .servicesPage .mix h3 {
+        padding: 8px 0 0 0; }
+      .servicesPage .mix img {
+        padding: 10px 0; }
+      .servicesPage .mix p {
         margin-bottom: 10px;
-    }
-
-    /* Página de Asesorías */
-
-    .advisoryPage{
-        margin: 20px 10px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-        "asesorias asesorias"
-        "instalaciones instalaciones"
-        "form form"
-        ;
-    }
-
-    .advisoryPage h2{
-        margin-top: 10px;
-    }
-
-    .advisoryPage section div{
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
         text-align: center;
-    }
-
-    .advisoryPage section div p{
-        padding: 0;
-    }
-
-    .advisoryForm{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .advisoryForm .formField{
-        width: 100%;
-    }
-    
-    .advisoryForm .formList{
-        width: 100%;
-    }
-    
-    .advisoryForm .txtArea{
-        width: 100%;
-        outline: none;
-        font-family: 'Noto Sans', sans-serif;
-    }
-
-    .advisoryForm .btnForm{
-        width: 100%;
-        padding-right: 14px 
-    }
-
-    .advisoryForm div{
-        margin: 7px;
-    }
-    
-    .advisoryForm label{
-        margin-bottom: 3px;
-    }
-
-    .advisoryPage img{
+        padding: 0 15px; }
+      .servicesPage .mix a {
+        margin-bottom: 10px; }
+    .servicesPage .mast {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .servicesPage .mast h3 {
+        padding: 8px 0 0 0; }
+      .servicesPage .mast img {
+        padding: 10px 0; }
+      .servicesPage .mast p {
+        margin-bottom: 10px;
+        text-align: center;
+        padding: 0 15px; }
+      .servicesPage .mast a {
+        margin-bottom: 10px; }
+    .servicesPage .inst {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .servicesPage .inst h3 {
+        padding: 8px 0 0 0; }
+      .servicesPage .inst img {
+        padding: 10px 0; }
+      .servicesPage .inst p {
+        margin-bottom: 10px;
+        text-align: center;
+        padding: 0 15px; }
+      .servicesPage .inst a {
+        margin-bottom: 10px; }
+  /* Página de Asesorías */
+  .advisoryPage {
+    margin: 20px 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "asesorias asesorias" "instalaciones instalaciones" "form form"; }
+    .advisoryPage section h2 {
+      margin-top: 10px; }
+    .advisoryPage section div {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center; }
+      .advisoryPage section div p {
+        padding: 0; }
+      .advisoryPage section div img {
         width: 320px;
         height: 180px;
-        margin-left: 0px;
-    }
-
-    /* Página de Trabajos */
-
-    .portfolioPage{
-        margin: 20px 10px;
-    }
-
-    .portfolioPage img{
-        border: none;
-    }
-
-    .portfolioCarousel{
-        display: block;
-    }
-
-    .works1, .works2{
-        display: none;
-    }
-
-    .iframeSect{
+        margin-left: 0px; }
+    .advisoryPage .advisoryForm {
+      display: flex;
+      flex-direction: column; }
+      .advisoryPage .advisoryForm .nameForm {
+        margin: 7px; }
+        .advisoryPage .advisoryForm .nameForm label {
+          margin-bottom: 3px; }
+        .advisoryPage .advisoryForm .nameForm .formField {
+          width: 100%; }
+      .advisoryPage .advisoryForm .emailForm {
+        margin: 7px; }
+        .advisoryPage .advisoryForm .emailForm label {
+          margin-bottom: 3px; }
+        .advisoryPage .advisoryForm .emailForm .formField {
+          width: 100%; }
+      .advisoryPage .advisoryForm .caseForm {
+        margin: 7px; }
+        .advisoryPage .advisoryForm .caseForm label {
+          margin-bottom: 3px; }
+        .advisoryPage .advisoryForm .caseForm .formList {
+          width: 100%; }
+      .advisoryPage .advisoryForm .describeForm {
+        margin: 7px; }
+        .advisoryPage .advisoryForm .describeForm label {
+          margin-bottom: 3px; }
+        .advisoryPage .advisoryForm .describeForm .txtArea {
+          width: 100%;
+          outline: none;
+          font-family: 'Noto Sans', sans-serif; }
+      .advisoryPage .advisoryForm .btnForm {
         width: 100%;
-    }
-
-    .iframeSect iframe{
-        width: 100%;
-    }
-
-    /*Página de Contacto */
-
-    .contactPage{
-        margin: 20px 10px;
-    }
-
-    .contactSection{
-        flex-direction: column;
-    }
-
-    .contactSection .contactForm{
-        width: 100%;
-    }
-
-    .imgPerfil2{
-        display: none;
-    }
-}
+        padding-right: 14px; }
+  /* Página de Trabajos */
+  .portfolioPage {
+    margin: 20px 10px; }
+    .portfolioPage .works .works1, .portfolioPage .works .works2 {
+      display: none; }
+    .portfolioPage .works .works2 {
+      display: none; }
+    .portfolioPage .works .portfolioCarousel {
+      display: block; }
+    .portfolioPage .works .iframeSect {
+      width: 100%; }
+      .portfolioPage .works .iframeSect iframe {
+        width: 100%; }
+  /*Página de Contacto */
+  .contactPage {
+    margin: 20px 10px; }
+    .contactPage .contactSection {
+      flex-direction: column; }
+      .contactPage .contactSection .contactForm {
+        width: 100%; }
+      .contactPage .contactSection .imgPerfil2 {
+        display: none; } }

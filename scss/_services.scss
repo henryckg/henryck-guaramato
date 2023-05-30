@@ -1,0 +1,32 @@
+.servicesPage{
+    display: grid;
+    margin: 0 30px 15px 30px;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0,4fr 1fr 1fr;
+    grid-template-areas: 
+        "txt txt"
+        "recprod mix"
+        "mast inst";
+    .txt{
+        grid-area: txt;
+        text-align: center;
+        margin: 20px auto 0 auto; 
+    }
+    .recprod{
+        grid-area: recprod;
+        @include service(5 / span 3, 1 / span 4, 0 0 0 15px, start, 1 / span 4)
+    }
+    .mix{
+        grid-area: mix;
+        @include service(1 / span 3, 4 / span 4 , 0 15px 0 0, end, 4 / span 4)
+    }
+    .mast{
+        grid-area: mast;
+        @include service(5 / span 3, 1 / span 4, 0 0 0 15px, start, 1 / span 4)
+    }
+    .inst{
+        grid-area: inst;
+        @include service(1 / span 3, 4 / span 4 , 0 15px 0 0, end, 4 / span 4)
+    }
+}

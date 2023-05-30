@@ -1,0 +1,183 @@
+@media screen and (max-width: 768px){
+
+    /* Navbar y Header*/
+
+    header{
+        .cajaTop{
+            display: none;
+        }
+        div{
+            .navbar{
+                display: inline;
+            }
+        }
+        nav{
+            .menu{
+                display: none;
+            }
+        }
+    }
+
+    /* Main */
+
+    main{
+        .bioSection{
+            .bioText{
+                padding: 0 15px;
+            }
+        }
+        .servicesSection{
+            h2{
+                display: none;
+            }
+            .services{
+                display: none;
+            }
+            .carouselServices{
+                display: block;
+            }
+        }
+    }
+
+    /* Página de Servicios */
+
+    .servicesPage{
+        margin: 0 10px 15px 10px;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "txt"
+        "recprod"
+        "mix"
+        "mast"
+        "inst";
+        .recprod{
+            @include serviceFlex
+        }
+        .mix{
+            @include serviceFlex
+        }
+        .mast{
+            @include serviceFlex
+        }
+        .inst{
+            @include serviceFlex
+        }
+    }
+
+    /* Página de Asesorías */
+
+    .advisoryPage{
+        margin: 20px 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "asesorias asesorias"
+        "instalaciones instalaciones"
+        "form form";
+        section{
+            h2{
+                margin-top: 10px;
+            }
+            div{
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                text-align: center;
+                p{
+                    padding: 0;
+                }
+                img{
+                    width: 320px;
+                    height: 180px;
+                    margin-left: 0px;
+                }
+            }
+        }
+        .advisoryForm{
+            display: flex;
+            flex-direction: column;
+            .nameForm{
+                margin: 7px;
+                label{
+                    margin-bottom: 3px;
+                }
+                .formField{
+                    width: 100%;
+                }
+            }
+            .emailForm{
+                margin: 7px;
+                label{
+                    margin-bottom: 3px;
+                }
+                .formField{
+                    width: 100%;
+                }
+            }
+            .caseForm{
+                margin: 7px;
+                label{
+                    margin-bottom: 3px;
+                }
+                .formList{
+                    width: 100%;
+                }
+            }
+            .describeForm{    
+                margin: 7px;
+                label{
+                    margin-bottom: 3px;
+                }
+                .txtArea{
+                    width: 100%;
+                    outline: none;
+                    font-family: 'Noto Sans', sans-serif;
+                }
+            }
+            .btnForm{
+                width: 100%;
+                padding-right: 14px;
+            }
+        }
+    }
+
+    /* Página de Trabajos */
+
+    .portfolioPage{
+        margin: 20px 10px;
+        .works{
+            .works1{
+                display: none;
+            }
+            .works2{
+                display: none;
+            }
+            .portfolioCarousel{
+                display: block;
+            }
+            .iframeSect{
+                width: 100%;
+                iframe{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    /*Página de Contacto */
+
+    .contactPage{
+        margin: 20px 10px;
+        .contactSection{
+            flex-direction: column;
+            .contactForm{
+                width: 100%;
+            }
+            .imgPerfil2{
+                display: none;
+            }
+        }
+    }
+}

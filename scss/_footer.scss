@@ -1,0 +1,39 @@
+footer{
+    background-color: $darkBg;
+    border-top: solid 2px black;
+    color: $bgColor;
+    padding: 20px;
+    font-size: 1.1rem;
+    .newsletter{
+        div{
+            .nlField{
+                width: 250px;
+                height: 30px;
+                margin: 5px auto;
+            }
+            .formButton{
+                background: $lightBg;
+                border: black 1px solid;
+                margin-top: 10px;
+                width: 250px;
+                height: 30px;
+                text-transform: uppercase;
+                transition: 0.3s;
+                &:hover{
+                    background: $btnColor;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .cajaSocialLogos{
+        .socialLogos{
+            a{
+                img{
+                    width: 50px;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+main{
+    .bioSection{
+    background-color: $tealBg;
+    border-top: solid 4px black;
+        .bioPic{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .bioText{
+            padding: 0 2rem;
+            h2{
+                line-height: 1.6;
+            }
+            p{
+                span{
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .servicesSection{
+        border-top: solid 4px black;
+        background-color: $lightBg;
+        text-align: center;
+        h2{
+            padding-top: 20px;
+        }
+        .services{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 20px;
+            font-weight: 400;
+            font-size: 1.1rem;
+            div{
+                a{
+                    img{
+                        width: 240px;
+                        height: 140px;
+                        border-radius: 5px;
+                        margin-bottom: 10px;
+                        &:hover{
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+        }
+        .carouselServices{
+            display: none;
+            padding-left: 0;
+            padding-right: 0;
+            span{
+                font-size: 1.8rem;
+                font-weight: 400;
+            }
+        }
+    }
+    .portfolioSection{
+        text-align: center;
+        border-top: solid 4px black;
+        border-bottom: solid 4px black;
+        background-color: #0E8388;
+    }
+}

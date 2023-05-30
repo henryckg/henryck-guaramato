@@ -1,0 +1,92 @@
+.advisoryPage{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "asesorias instalaciones"
+    "form form";
+    margin: 20px 30px;
+    .asesorias{
+        grid-area: asesorias;
+        @include advisory
+    }
+    .instalaciones{
+        grid-area: instalaciones;
+        @include advisory
+    }
+    .advisoryForm{
+        background-color: $lightBg;
+        border: 2px solid black;
+        grid-area: form;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 0.2fr 0.5fr 0.5fr 0.2fr;
+        padding: 20px;
+        .txtForm{
+            grid-column: 3 / 5;
+            text-align: center;
+            font-weight: 400;   
+            font-size: 1.1rem;
+        }
+        .nameForm{
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            .formField{
+                outline: none;
+                width: 95%;
+                height: 30px;
+            }
+        }
+        .emailForm{
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+            .formField{
+                outline: none;
+                width: 95%;
+                height: 30px;
+            }
+        }
+        .caseForm{
+            grid-column: 2 / 4;
+            grid-row: 3 / 4;
+            .formList{
+                outline: none;
+                width: 98%;
+                height: 30px;
+                border-radius: 10px;
+            }
+        }
+        .describeForm{
+            grid-column: 4 / 6;
+            grid-row: 2 / 4;
+            justify-self: center;
+            .txtArea{
+                width: 100%;
+                outline: none;
+                font-family: 'Noto Sans', sans-serif;
+            }
+        }
+        .btnForm{
+            grid-column: 3 / 5;
+            grid-row: 4 / 5;
+            justify-self: center;
+            width: 50%;
+            .btnSend{
+                background: $btnColor;
+                border: black 1px solid;
+                color: white;
+                margin-top: 10px;
+                width: 100%;
+                height: 30px;
+                text-transform: uppercase;
+                transition: 0.3s;
+                &:hover{
+                    background: transparent;
+                    color: black;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
