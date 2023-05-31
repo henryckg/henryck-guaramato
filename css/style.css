@@ -2,6 +2,7 @@
 /* Mixin para página de servicios */
 /* Mixin para página de asesorías */
 /* Mixin para página de servicios en mobile */
+/* Mixin para página de asesorías en mobile */
 /* Reset CSS */
 * {
   margin: 0;
@@ -377,7 +378,8 @@ main .portfolioSection {
     .advisoryPage .advisoryForm .describeForm {
       grid-column: 4 / 6;
       grid-row: 2 / 4;
-      justify-self: center; }
+      justify-self: center;
+      width: 90%; }
       .advisoryPage .advisoryForm .describeForm .txtArea {
         width: 100%;
         outline: none;
@@ -589,42 +591,60 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: "asesorias asesorias" "instalaciones instalaciones" "form form"; }
-    .advisoryPage section h2 {
+    .advisoryPage .asesorias h2 {
       margin-top: 10px; }
-    .advisoryPage section div {
+    .advisoryPage .asesorias div {
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
       text-align: center; }
-      .advisoryPage section div p {
+      .advisoryPage .asesorias div p {
         padding: 0; }
-      .advisoryPage section div img {
+      .advisoryPage .asesorias div img {
+        width: 320px;
+        height: 180px;
+        margin-left: 0px; }
+    .advisoryPage .instalaciones h2 {
+      margin-top: 10px; }
+    .advisoryPage .instalaciones div {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center; }
+      .advisoryPage .instalaciones div p {
+        padding: 0; }
+      .advisoryPage .instalaciones div img {
         width: 320px;
         height: 180px;
         margin-left: 0px; }
     .advisoryPage .advisoryForm {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      align-items: center; }
       .advisoryPage .advisoryForm .nameForm {
-        margin: 7px; }
+        margin: 7px;
+        width: 100%; }
         .advisoryPage .advisoryForm .nameForm label {
           margin-bottom: 3px; }
         .advisoryPage .advisoryForm .nameForm .formField {
           width: 100%; }
       .advisoryPage .advisoryForm .emailForm {
-        margin: 7px; }
+        margin: 7px;
+        width: 100%; }
         .advisoryPage .advisoryForm .emailForm label {
           margin-bottom: 3px; }
         .advisoryPage .advisoryForm .emailForm .formField {
           width: 100%; }
       .advisoryPage .advisoryForm .caseForm {
-        margin: 7px; }
+        margin: 7px;
+        width: 100%; }
         .advisoryPage .advisoryForm .caseForm label {
           margin-bottom: 3px; }
         .advisoryPage .advisoryForm .caseForm .formList {
           width: 100%; }
       .advisoryPage .advisoryForm .describeForm {
-        margin: 7px; }
+        margin: 7px;
+        width: 100%; }
         .advisoryPage .advisoryForm .describeForm label {
           margin-bottom: 3px; }
         .advisoryPage .advisoryForm .describeForm .txtArea {
@@ -632,8 +652,7 @@ footer {
           outline: none;
           font-family: 'Noto Sans', sans-serif; }
       .advisoryPage .advisoryForm .btnForm {
-        width: 100%;
-        padding-right: 14px; }
+        width: 100%; }
   /* Página de Trabajos */
   .portfolioPage {
     margin: 20px 10px; }

@@ -76,30 +76,19 @@
         "asesorias asesorias"
         "instalaciones instalaciones"
         "form form";
-        section{
-            h2{
-                margin-top: 10px;
-            }
-            div{
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-between;
-                text-align: center;
-                p{
-                    padding: 0;
-                }
-                img{
-                    width: 320px;
-                    height: 180px;
-                    margin-left: 0px;
-                }
-            }
+        .asesorias{
+            @include advisoryMobile;
+        }
+        .instalaciones{
+            @include advisoryMobile;
         }
         .advisoryForm{
             display: flex;
             flex-direction: column;
+            align-items: center;
             .nameForm{
                 margin: 7px;
+                width: 100%;
                 label{
                     margin-bottom: 3px;
                 }
@@ -109,6 +98,7 @@
             }
             .emailForm{
                 margin: 7px;
+                width: 100%;
                 label{
                     margin-bottom: 3px;
                 }
@@ -118,6 +108,7 @@
             }
             .caseForm{
                 margin: 7px;
+                width: 100%;
                 label{
                     margin-bottom: 3px;
                 }
@@ -127,6 +118,7 @@
             }
             .describeForm{    
                 margin: 7px;
+                width: 100%;
                 label{
                     margin-bottom: 3px;
                 }
@@ -138,7 +130,6 @@
             }
             .btnForm{
                 width: 100%;
-                padding-right: 14px;
             }
         }
     }

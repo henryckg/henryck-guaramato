@@ -9,11 +9,11 @@
     margin: 20px 30px;
     .asesorias{
         grid-area: asesorias;
-        @include advisory
+        @include advisory;
     }
     .instalaciones{
         grid-area: instalaciones;
-        @include advisory
+        @include advisory;
     }
     .advisoryForm{
         background-color: $lightBg;
@@ -61,6 +61,7 @@
             grid-column: 4 / 6;
             grid-row: 2 / 4;
             justify-self: center;
+            width: 90%;
             .txtArea{
                 width: 100%;
                 outline: none;
