@@ -42,6 +42,7 @@
     /* Página de Servicios */
 
     .servicesPage{
+        overflow: hidden;
         margin: 0 10px 15px 10px;
         gap: 10px;
         grid-template-columns: 1fr;
@@ -69,6 +70,7 @@
     /* Página de Asesorías */
 
     .advisoryPage{
+        overflow: hidden;
         margin: 20px 10px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;

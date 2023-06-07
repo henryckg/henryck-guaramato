@@ -74,6 +74,7 @@ main .bioSection {
       font-weight: 400; }
 
 main .servicesSection {
+  overflow: hidden;
   border-top: solid 4px black;
   background-color: #CBE4DE;
   text-align: center;
@@ -524,6 +525,7 @@ footer {
     display: block; }
   /* Página de Servicios */
   .servicesPage {
+    overflow: hidden;
     margin: 0 10px 15px 10px;
     gap: 10px;
     grid-template-columns: 1fr;
@@ -587,6 +589,7 @@ footer {
         margin-bottom: 10px; }
   /* Página de Asesorías */
   .advisoryPage {
+    overflow: hidden;
     margin: 20px 10px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;

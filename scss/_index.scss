@@ -19,6 +19,7 @@ main{
         }
     }
     .servicesSection{
+        overflow: hidden;
         border-top: solid 4px black;
         background-color: $lightBg;
         text-align: center;
