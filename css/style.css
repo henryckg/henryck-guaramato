@@ -34,9 +34,16 @@ header {
         font-style: italic; }
     header .cajaTop .logo img {
       width: 80px; }
-    header .cajaTop .socialLogos img {
-      width: 50px;
-      padding: 5px; }
+    header .cajaTop .socialLogos a i {
+      font-size: 38px;
+      margin-left: 5px;
+      margin-right: 5px;
+      text-decoration: none;
+      color: #2C3333;
+      transition: all 0.5s ease; }
+      header .cajaTop .socialLogos a i:hover {
+        color: #0E8388;
+        transform: translateY(-5px); }
   header nav .menu {
     background-color: #2C3333;
     font-weight: bold;
@@ -50,10 +57,14 @@ header {
       color: #dfdfdf;
       margin: 10px;
       padding: 15px;
-      transition: 0.3s; }
+      transition: 0.3s all ease-in;
+      border-top: 1px #2C3333 solid;
+      border-bottom: 1px #2C3333 solid; }
       header nav .menu li a:hover {
         color: #2C3333;
-        background-color: #dfdfdf; }
+        background-color: #dfdfdf;
+        border-top: 1px #dfdfdf solid;
+        border-bottom: 1px #dfdfdf solid; }
   header div .navbar {
     display: none; }
     header div .navbar div .navbar-brand img {
@@ -91,8 +102,9 @@ main .servicesSection {
     main .servicesSection .services div a img {
       width: 240px;
       height: 140px;
-      border-radius: 5px;
-      margin-bottom: 10px; }
+      border: solid #000 1px;
+      margin-bottom: 10px;
+      transition: .3s; }
       main .servicesSection .services div a img:hover {
         opacity: 0.8; }
   main .servicesSection .carouselServices {
@@ -127,7 +139,8 @@ main .portfolioSection {
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 60px auto 60px;
     border: 2px solid black;
-    background-color: #0E8388; }
+    background-color: #0E8388;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7); }
     .servicesPage .recprod h3 {
       grid-column: 1 / 8;
       grid-row: 1 / 2;
@@ -139,7 +152,8 @@ main .portfolioSection {
       justify-self: center;
       width: 220px;
       height: 140px;
-      margin: 0 10px; }
+      margin: 0 10px;
+      border: solid #000 1px; }
     .servicesPage .recprod p {
       grid-column: 1/span 4;
       grid-row: 2 / 4;
@@ -160,7 +174,7 @@ main .portfolioSection {
       padding: 3px 0;
       text-transform: uppercase;
       font-weight: 400;
-      transition: 0.3s; }
+      transition: all 0.3s ease-in; }
       .servicesPage .recprod .serviceButton:hover {
         background: #2C3333;
         color: #fff;
@@ -171,7 +185,8 @@ main .portfolioSection {
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 60px auto 60px;
     border: 2px solid black;
-    background-color: #0E8388; }
+    background-color: #0E8388;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7); }
     .servicesPage .mix h3 {
       grid-column: 1 / 8;
       grid-row: 1 / 2;
@@ -183,7 +198,8 @@ main .portfolioSection {
       justify-self: center;
       width: 220px;
       height: 140px;
-      margin: 0 10px; }
+      margin: 0 10px;
+      border: solid #000 1px; }
     .servicesPage .mix p {
       grid-column: 4/span 4;
       grid-row: 2 / 4;
@@ -204,7 +220,7 @@ main .portfolioSection {
       padding: 3px 0;
       text-transform: uppercase;
       font-weight: 400;
-      transition: 0.3s; }
+      transition: all 0.3s ease-in; }
       .servicesPage .mix .serviceButton:hover {
         background: #2C3333;
         color: #fff;
@@ -215,7 +231,8 @@ main .portfolioSection {
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 60px auto 60px;
     border: 2px solid black;
-    background-color: #0E8388; }
+    background-color: #0E8388;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7); }
     .servicesPage .mast h3 {
       grid-column: 1 / 8;
       grid-row: 1 / 2;
@@ -227,7 +244,8 @@ main .portfolioSection {
       justify-self: center;
       width: 220px;
       height: 140px;
-      margin: 0 10px; }
+      margin: 0 10px;
+      border: solid #000 1px; }
     .servicesPage .mast p {
       grid-column: 1/span 4;
       grid-row: 2 / 4;
@@ -248,7 +266,7 @@ main .portfolioSection {
       padding: 3px 0;
       text-transform: uppercase;
       font-weight: 400;
-      transition: 0.3s; }
+      transition: all 0.3s ease-in; }
       .servicesPage .mast .serviceButton:hover {
         background: #2C3333;
         color: #fff;
@@ -259,7 +277,8 @@ main .portfolioSection {
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 60px auto 60px;
     border: 2px solid black;
-    background-color: #0E8388; }
+    background-color: #0E8388;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7); }
     .servicesPage .inst h3 {
       grid-column: 1 / 8;
       grid-row: 1 / 2;
@@ -271,7 +290,8 @@ main .portfolioSection {
       justify-self: center;
       width: 220px;
       height: 140px;
-      margin: 0 10px; }
+      margin: 0 10px;
+      border: solid #000 1px; }
     .servicesPage .inst p {
       grid-column: 4/span 4;
       grid-row: 2 / 4;
@@ -292,7 +312,7 @@ main .portfolioSection {
       padding: 3px 0;
       text-transform: uppercase;
       font-weight: 400;
-      transition: 0.3s; }
+      transition: all 0.3s ease-in; }
       .servicesPage .inst .serviceButton:hover {
         background: #2C3333;
         color: #fff;
@@ -308,7 +328,8 @@ main .portfolioSection {
   .advisoryPage .asesorias {
     grid-area: asesorias;
     background-color: #0E8388;
-    border: 2px solid black; }
+    border: 2px solid black;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7); }
     .advisoryPage .asesorias h2 {
       text-align: center;
       padding: 10px; }
@@ -322,11 +343,13 @@ main .portfolioSection {
       .advisoryPage .asesorias div img {
         width: 300px;
         height: 160px;
-        margin-left: 15px; }
+        margin-left: 15px;
+        border: solid #000 1px; }
   .advisoryPage .instalaciones {
     grid-area: instalaciones;
     background-color: #0E8388;
-    border: 2px solid black; }
+    border: 2px solid black;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7); }
     .advisoryPage .instalaciones h2 {
       text-align: center;
       padding: 10px; }
@@ -340,10 +363,12 @@ main .portfolioSection {
       .advisoryPage .instalaciones div img {
         width: 300px;
         height: 160px;
-        margin-left: 15px; }
+        margin-left: 15px;
+        border: solid #000 1px; }
   .advisoryPage .advisoryForm {
     background-color: #CBE4DE;
     border: 2px solid black;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
     grid-area: form;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -398,7 +423,7 @@ main .portfolioSection {
         width: 100%;
         height: 30px;
         text-transform: uppercase;
-        transition: 0.3s; }
+        transition: all 0.3s ease-in; }
         .advisoryPage .advisoryForm .btnForm .btnSend:hover {
           background: transparent;
           color: black;
@@ -407,6 +432,7 @@ main .portfolioSection {
 .portfolioPage {
   background-color: #0E8388;
   border: 2px solid black;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
   margin: 20px 30px;
   padding: 10px; }
   .portfolioPage .portfolioTitle {
@@ -433,6 +459,7 @@ main .portfolioSection {
 .contactPage {
   background-color: #0E8388;
   border: 2px solid black;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
   margin: 20px 30px;
   padding: 10px; }
   .contactPage h2 {
@@ -469,7 +496,7 @@ main .portfolioSection {
           width: 100%;
           height: 30px;
           text-transform: uppercase;
-          transition: 0.3s; }
+          transition: all 0.3s ease-in; }
           .contactPage .contactSection .contactForm div .btnSend:hover {
             background: transparent;
             color: black;
@@ -498,13 +525,20 @@ footer {
     width: 250px;
     height: 30px;
     text-transform: uppercase;
-    transition: 0.3s; }
+    transition: all 0.3s ease-in; }
     footer .newsletter div .formButton:hover {
       background: #2E4F4F;
       cursor: pointer; }
-  footer .cajaSocialLogos .socialLogos a img {
-    width: 50px;
-    padding: 5px; }
+  footer .cajaSocialLogos .socialLogos a i {
+    font-size: 38px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: #CBE4DE;
+    transition: all 0.5s ease; }
+    footer .cajaSocialLogos .socialLogos a i:hover {
+      color: #0E8388;
+      transform: translateY(-5px); }
 
 @media screen and (max-width: 768px) {
   /* Navbar y Header*/
@@ -538,9 +572,9 @@ footer {
       .servicesPage .recprod h3 {
         padding: 8px 0 0 0; }
       .servicesPage .recprod img {
-        padding: 10px 0; }
+        margin: 10px; }
       .servicesPage .recprod p {
-        margin-bottom: 10px;
+        margin: 10px 0;
         text-align: center;
         padding: 0 15px; }
       .servicesPage .recprod a {
@@ -552,9 +586,9 @@ footer {
       .servicesPage .mix h3 {
         padding: 8px 0 0 0; }
       .servicesPage .mix img {
-        padding: 10px 0; }
+        margin: 10px; }
       .servicesPage .mix p {
-        margin-bottom: 10px;
+        margin: 10px 0;
         text-align: center;
         padding: 0 15px; }
       .servicesPage .mix a {
@@ -566,9 +600,9 @@ footer {
       .servicesPage .mast h3 {
         padding: 8px 0 0 0; }
       .servicesPage .mast img {
-        padding: 10px 0; }
+        margin: 10px; }
       .servicesPage .mast p {
-        margin-bottom: 10px;
+        margin: 10px 0;
         text-align: center;
         padding: 0 15px; }
       .servicesPage .mast a {
@@ -580,9 +614,9 @@ footer {
       .servicesPage .inst h3 {
         padding: 8px 0 0 0; }
       .servicesPage .inst img {
-        padding: 10px 0; }
+        margin: 10px; }
       .servicesPage .inst p {
-        margin-bottom: 10px;
+        margin: 10px 0;
         text-align: center;
         padding: 0 15px; }
       .servicesPage .inst a {
@@ -591,9 +625,9 @@ footer {
   .advisoryPage {
     overflow: hidden;
     margin: 20px 10px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "asesorias asesorias" "instalaciones instalaciones" "form form"; }
+    grid-template-areas: "asesorias" "instalaciones" "form"; }
     .advisoryPage .asesorias h2 {
       margin-top: 10px; }
     .advisoryPage .asesorias div {
@@ -606,7 +640,8 @@ footer {
       .advisoryPage .asesorias div img {
         width: 320px;
         height: 180px;
-        margin-left: 0px; }
+        margin-left: 0px;
+        margin-bottom: 10px; }
     .advisoryPage .instalaciones h2 {
       margin-top: 10px; }
     .advisoryPage .instalaciones div {
@@ -619,7 +654,8 @@ footer {
       .advisoryPage .instalaciones div img {
         width: 320px;
         height: 180px;
-        margin-left: 0px; }
+        margin-left: 0px;
+        margin-bottom: 10px; }
     .advisoryPage .advisoryForm {
       display: flex;
       flex-direction: column;

@@ -18,7 +18,7 @@ footer{
                 width: 250px;
                 height: 30px;
                 text-transform: uppercase;
-                transition: 0.3s;
+                transition: all 0.3s ease-in;
                 &:hover{
                     background: $btnColor;
                     cursor: pointer;
@@ -29,9 +29,17 @@ footer{
     .cajaSocialLogos{
         .socialLogos{
             a{
-                img{
-                    width: 50px;
-                    padding: 5px;
+                i{
+                    font-size: 38px;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    text-decoration: none;
+                    color: $lightBg;
+                    transition: all 0.5s ease;
+                    &:hover{
+                        color: $tealBg;
+                        transform: translateY(-5px)
+                    }
                 }
             }
         }

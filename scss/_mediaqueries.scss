@@ -72,12 +72,12 @@
     .advisoryPage{
         overflow: hidden;
         margin: 20px 10px;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas:
-        "asesorias asesorias"
-        "instalaciones instalaciones"
-        "form form";
+        "asesorias"
+        "instalaciones"
+        "form";
         .asesorias{
             @include advisoryMobile;
         }
