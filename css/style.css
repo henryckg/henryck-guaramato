@@ -505,8 +505,7 @@ main .portfolioSection {
       width: 300px;
       text-align: center; }
       .contactPage .contactSection .imgPerfil2 img {
-        height: 450px;
-        border: solid 1px black; }
+        width: 90%; }
 
 footer {
   background-color: #2C3333;
